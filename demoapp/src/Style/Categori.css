@@ -1,0 +1,32 @@
+.Categories{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aquamarine;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+}
+.Categories-row{
+    display: flex !important;
+    justify-content: space-between;
+
+}
+.Categories-second-row{
+    display: flex !important;
+    justify-content: space-between;
+}
+.Categories-two{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around;
+    text-align: center;
+}
+/* ....................................cartstyle............... */
+
+.product-cart{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
