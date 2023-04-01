@@ -2,7 +2,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background-color: aquamarine;
+    background-color: rgb(204, 243, 30);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: flex;
     align-items: center !important;
@@ -10,22 +10,30 @@
 }
 .Categories-row{
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .Categories-second-row{
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .Categories-two{
+    margin-top: 20px;
+    width:60px ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: flex;
     align-items: center !important;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
 }
 /* ....................................cartstyle............... */
-
+.buttons{
+    display: flex;
+    
+}
+.cards{
+    margin-left: 20px;
+}
 .product-cart{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 

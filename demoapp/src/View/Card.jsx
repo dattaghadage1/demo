@@ -44,18 +44,18 @@ function Card() {
     const [state, dispatch] = useReducer(reducer, initialstate)
     return (
         <div>
-            <div className="row d-flex mt-5 mx-auto ">
-                <div className="col-3"><button className='btn btn-dark' onClick={() => dispatch({ type: "all" })}>ALL</button></div>
-                <div className="col-3"><button className='btn btn-dark' onClick={() => dispatch({ type: "Jewelery" })}>Jewelery</button></div>
-                <div className="col-3"><button className='btn btn-dark' onClick={() => dispatch({ type: "Electronics" })}>Electronics</button></div>
-                <div className="col-3"><button className='btn btn-dark' onClick={() => dispatch({ type: "Men" })}>Men's clothing</button></div>
+            <div className="row d-flex mt-5 mx-auto flex-row buttons">
+                <div className="col-4 col-md-3 text-center  "><button className='btn btn-dark' onClick={() => dispatch({ type: "all" })}>ALL</button></div>
+                <div className="col-4 col-md-3  text-center "><button className='btn btn-dark' onClick={() => dispatch({ type: "Jewelery" })}>Jewelery</button></div>
+                <div className="col-4 col-md-3  text-center "><button className='btn btn-dark' onClick={() => dispatch({ type: "Electronics" })}>Electronics</button></div>
+                <div className="col-4 d-none  d-md-inline  col-md-3"><button className='btn btn-dark' onClick={() => dispatch({ type: "Men" })}>Men's </button></div>
             </div>
-            <div className="row">
+            <div className="row d-flex text-center cards">
                 {
                     cardData.map((ele) => (
-                        <div className="col-3 mt-5">
+                        <div className="col-lg-3 col-md-6 col-md-2 mt-5">
                             <div className="card product-cart" style={{ width: '18rem', height: '30rem' }}>
-                                <img src={ele.image} className="card-img-top" width={300} height={300} alt="image" />
+                                <img src={ele.image} className="card-img-top image-fluid" width={300} height={300} alt="image"  />
                                 <div className="card-body">
                                     <h5 className="card-title">{ele.title}</h5>
                                     <p className="card-text">{ele.description.slice(0, 80)}</p>
